@@ -42,6 +42,11 @@ app.post("/paywithpaytmresponse", (req, res) => {
     );
 });
 
+
+app.get('/',(req,res)=>{
+    res.send('Success')
+})
+
 app.listen(PORT, () => {
     console.log("Running on " + PORT);
 });
